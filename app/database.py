@@ -22,7 +22,7 @@ def get_db():
 # while True:
 
 #     try:
-#         conn = psycopg2.connect(host='localhost', database='postgres', user='postgres', password='Angola2026!', cursor_factory=RealDictCursor)
+#         conn = psycopg2.connect(host='localhost', database='postgres', user='postgres', password='', cursor_factory=RealDictCursor)
 #         cursor = conn.cursor()
 #         print("Database connection was succesful")
 #     except Exception as error:
