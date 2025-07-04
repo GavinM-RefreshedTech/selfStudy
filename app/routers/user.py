@@ -1,15 +1,7 @@
-from typing import List, Optional
-from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
-from fastapi.params import Body
-from pydantic import BaseModel
-from random import randrange
-import psycopg2
-from passlib.context import CryptContext
-from psycopg2.extras import RealDictCursor
-import time
+from fastapi import status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
 from .. import models, schemas, utils
-from ..database import engine, get_db
+from ..database import get_db
 
 
 router = APIRouter(
